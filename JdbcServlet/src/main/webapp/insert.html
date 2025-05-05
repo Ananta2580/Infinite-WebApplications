@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="post" action="EmployInsertServlet">
+		<label for="empId">Employ No:</label><br>
+        <input type="text" id="empId" name="empId" required><br><br>
+
+        <label for="name">Employ Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="MALE" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="FEMALE">
+        <label for="female">Female</label><br><br>
+
+        <label for="dept">Department:</label><br>
+        <select id="dept" name="dept" required>
+            <option value="">--Select Department--</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="IT">IT</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Operations">Operations</option>
+        </select><br><br>
+
+        <label for="desig">Designation:</label><br>
+        <select id="desig" name="desig" required>
+            <option value="">--Select Designation--</option>
+            <option value="Manager">Manager</option>
+            <option value="Team Lead">Team Lead</option>
+            <option value="Developer">Developer</option>
+            <option value="Analyst">Analyst</option>
+            <option value="Clerk">Clerk</option>
+        </select><br><br>
+
+        <label for="basic">Basic Salary:</label><br>
+        <input type="number" id="basic" name="basic" required><br><br>
+
+        <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
